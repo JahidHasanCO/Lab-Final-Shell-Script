@@ -5,10 +5,13 @@ Body Mass Index (BMI) is a person's weight in kilograms (or pounds) divided by t
 # Preview
 `logo`
 ![](ART/s1.png)
+<br />
 `Enter Value`
 ![](ART/s2.png)
+<br />
 `Normal BMI Result`
 ![](ART/s3.png)
+<br />
 `Obese BMI Result`
 ![](ART/s4.png)
 
