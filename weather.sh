@@ -15,9 +15,9 @@ blue=`echo -en "\e[34m"`
 bold=`echo -en "\e[1m"`
 normal=`echo -en "\e[0m"`
 
-temp=$(echo $json|jq -r ."weather[0]|(.temp_F)")
-humidity=$(echo $json|jq -r ."current_condition[0]|.humidity")
-description=$(echo $json|jq -r ."current_condition[0]|(.weatherDesc[0].value)")
+temp=$(echo $json|jq -r ."main|.temp")
+humidity=$(echo $json|jq -r ."main|.humidity")
+description=$(echo $json|jq -r ."weather[0]|.description")
 
 if [[ ${temp} > 90 ]]
 then
