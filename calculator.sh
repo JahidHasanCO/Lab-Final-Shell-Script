@@ -10,7 +10,7 @@ function logo(){
     echo "██╔══██╗██║╚██╔╝██║██║"
     echo "██████╦╝██║░╚═╝░██║██║"
     echo "╚═════╝░╚═╝░░░░░╚═╝╚═╝"
-    echo -e "\e[1;36m--- @JahidHasanCo ----\e[0m"
+    echo -e "\e[1;36m--- Team Alpha ----\e[0m"
     echo ""
     echo ""
 }
