@@ -23,6 +23,24 @@ function logo(){
     echo ""
 }
 
+
+function cowLogo(){
+    echo "$red   ⠀⠀⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+    echo "⠀⠸⣿⣯⡓⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+    echo "⡤⠊⠉⠿⠈⠉⠑⠲⠤⠤⠤⠤⠤⠤⠤⢤⣤⠤⠤⠶⠖⠚⠛⠓⢦⠀⠀"
+    echo "⠧⣤⣀⣀⣀⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⢸⢸⠇⠀"
+    echo "⠀⠀⠈⠉⠙⢄⢠⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠆⠀⠀⠀⠀⠀⠸⢸⠀⠀"
+    echo "⠀⠀⠀⠀⠀⠈⣆⠢⡀⠀⠐⡀⠀⠀⠀⠀⠀⢣⠀⠀⠀⠀⠀⡄⣾⠀⠀"
+    echo "⠀⠀⠀⠀⠀⠀⠘⢦⡘⣄⠀⣇⠀⠀⠀⠀⠀⢀⢳⡖⠲⢄⣸⢧⢻⡄⠀"
+    echo "⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⠀⠘⠟⠒⠦⠤⠐⢧⡞⢛⡳⠚⢻⢏⠀⠙⡆"
+    echo "⠀⠀⠀⠀⠀⠀⠀⠀⢸⠉⣧⠀⡀⠀⠀⠀⠀⠀⠑⢻⡇⢠⠞⠀⠣⠀⡇"
+    echo "⠀⠀⠀⠀⠀⠀⠀⣠⣏⣠⣿⠀⣣⠀⠀⠀⠀⠀⢀⡞⠀⡎⠀⠀⡄⠀⡇"
+    echo "⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠷⠶⠇⠀⠀⠀⠀⣰⣏⣀⡴⠃⠀⣴⣥⣴⠋"
+    echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠁⠀⠀⠀⠀⠀⠀"
+    echo "--- Animal Weight Calculator ---$default"
+}
+
+
 function calculate(){
     
     read -p "Enter Height (cm): " height
@@ -56,6 +74,9 @@ function calculate(){
 
 
 function calculateWeight(){
+    
+    cowLogo
+    
     read -p "Enter Length from front leg to back leg (in): " lValue
     read -p "Enter Length from front leg to back leg (in): " gValue
     
@@ -70,6 +91,8 @@ function calculateWeight(){
 }
 
 function currentWeather(){
+    
+    
     my_weather_api="2afec2db7666aacfcc87650321550e5b"
     dhaka_lat="23.8103"
     dhaka_lon="90.4125"
@@ -107,6 +130,10 @@ function currentWeather(){
         color=""
     fi
     
+    echo ""
+    echo "----------------------------------"
+    echo "           Weather Info           "
+    echo "----------------------------------"
     echo "It is currently ${bold}${description}${normal}"
     echo "${color}Temperature: ${temp}℉ ${default}"
     echo "${color}Range: ${temp_min}℉ - ${temp_max}℉ ${default}"
